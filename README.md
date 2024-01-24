@@ -1,6 +1,6 @@
 # PostgreSQL - Things learned
 <p align='center'>
-  <img src="https://assets.stickpng.com/images/62cdccb0e106734e1ce200aa.png" width="450px">
+  <img src="https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png" width="450px">
 </p>
 
 Here are the things I have learned, you can use this as a roadmap if you want to learn from basic SQL up to advanced SQL with [PostgreeSQL](https://www.postgresql.org). 
