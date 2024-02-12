@@ -1,39 +1,60 @@
-# PostgreSQL - Things learned
+# PostgreSQL - Course
 <p align='center'>
   <img src="https://miro.medium.com/v2/resize:fit:610/1*mMq3Bem9r8ASAn1YwcTbEw.png" width="450px">
 </p>
 
 Here are the things I have learned, you can use this as a roadmap if you want to learn from basic SQL up to advanced SQL with [PostgreeSQL](https://www.postgresql.org). 
 
-We will be working with TablePlus or PHPMyAdmin, and we will also need to have **Docker** installed on our system. If you have never worked with Docker before, don't worry, it's simple.
+We will be working with TablePlus or PgAdmin, and we will also need to have **Docker** installed on our system. If you have never worked with Docker before, don't worry, it's simple.
 
 ## Required Installations
 
-  - [Docker](https://www.docker.com)
-  - [TablePlus](https://tableplus.com)
+  - #### [Docker](https://www.docker.com) <img src:>
+  - #### [TablePlus](https://tableplus.com)
 
 ## Prepare the enviorement
 
-  1. Download the [docker-compose.yml](docker-compose.yml) file.
-  2. Create a folder and move the **docker-compose.yml** file there.
-  3. Open the terminal and run.
+  1. Create a folder for the course..
+  2. Download the [docker-compose.yml](docker-compose.yml) file into the folder.
+  3. Open the terminal and run:
 
       ```
       docker pull postgres:15.3
       docker pull dpage/pgadmin4
       ```
 
-  4. Now navigate to the created folder and run `docker compose up -d`.
-  5. Close the terminal, open TablePlus, and add a new connection. Fill in the fields with the following information:
+  4. Now navigate from the terminal to the newly created folder and run:
       ```
-      Name: learning-sql 
-      Host: localhost
-      Port: 5432
-      User: student
-      Password: 123456
-      Database: course-db
+      docker compose up -d
+      ```
+  5. Close the terminal
+
+## Database Connection
+
+
+   - ### Table plus 
+     Open TablePlus and add a new PostgreSQL connection. Fill in the fields with the following information:
+
+      ```
+      Name      :   learning-sql 
+      Host      :   localhost
+      Port      :   5432
+      User      :   student
+      Password  :   123456
+      Database  :   course-db
       ```
       Then, click on connect.
+
+
+
+
+   - ### PgAdmin
+     Open a browser tab, in the address bar enter `localhost:8080`. Log in with the following credentials:
+
+       ```
+      Email Address :  student@google.com
+      Password      :  123456
+      ```
 
 ## Sections
 1. ### Basics and First Steps 
